@@ -1,0 +1,406 @@
+body {
+    background-color: #2D2D2D;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    top: 200px; /* Altura del banner */
+    left: 0;
+    width: 100%;
+    height: 50px; /* Altura del gradiente */
+    background: linear-gradient(to bottom, #FCBC4C, #ffffff00); /* Gradiente del color del fondo del body al color del banner */
+    z-index: -1; /* Asegura que esté detrás del contenido */
+}
+
+body:after {
+    content: "";
+    position: absolute;
+    top: 200px; /* Altura del banner */
+    left: 0;
+    width: 100%;
+    height: 50px; /* Altura del gradiente */
+    background: linear-gradient(to top, #2d2d2d, #ffffff00); /* Gradiente del color del fondo del body al color del banner */
+    z-index: -1; /* Asegura que esté detrás del contenido */
+}
+
+h1 {
+    color: #FCBC4C;
+    font-size: 24px;
+    margin-top: 80px; /* Ajustamos el margen superior para acomodar la imagen del perfil */
+}
+
+p {
+    color: #FCBC4C;
+    font-size: 24px;
+    margin-top: 20px; /* Ajustamos el margen superior para acomodar la imagen del perfil */
+}
+
+a {
+    text-decoration: none !important;
+    color: #ffffff;
+    transition: all 0.3s ease 0s;
+}
+
+.footer {
+	text-align: center;
+	font-weight: 400;
+	font-size: 14px;
+	color: #FFFFFF;
+	margin: 50px;
+    margin-top: -160px;
+}
+
+.footer a {
+	color: #FFFFFF;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    position: relative; 
+    z-index: 0; /* Asegura que el contenido esté por encima del gradiente */
+}
+
+.banner {
+    width: 100%;
+    height: 200px; /* Altura fija para la portada */
+    overflow: hidden;
+    position: relative; 
+}
+
+.banner:after {
+    content: "";
+    position: absolute;
+    top: 160px;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Altura del gradiente */
+    background: linear-gradient(to top, #FCBC4C, #ffffff00); /* Gradiente transparente */
+    z-index: 0; /* Asegura que esté encima de la imagen del banner */
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-pic {
+    position: absolute;
+    top: 100px; /* Ajustar para centrar la imagen del perfil sobre el banner */
+    left: 50%;
+    transform: translate(-50%, 10%);
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #2D2D2D;
+    border-radius: 50%;
+}
+
+.iconpad {
+    padding: 12px 0;
+    width: 100%;
+}
+
+.process-scetion .slider-nav-item {
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 50%;
+    text-align: center;
+    background: #000000;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.social-icons a {
+    border-radius: 50px;
+    color: #FCBC4C;
+    display: inline-block;
+    line-height: 45px;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 5px 25px #FCBC4C;
+    margin: 5px 5px;
+    font-size: 15px;
+}
+
+.slider-nav-item:before {
+    position: absolute;
+    content: "";
+    height: calc(100% + 16px);
+    width: calc(100% + 16px);
+    top: -9px;
+    left: -9px;
+    border-radius: 50%;
+    border: 1px solid #2d2d2d;
+    animation: 1.5s linear 0s normal none infinite focuse;
+}
+
+.process-scetion .slider-nav-item:after {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    height: 2px;
+    content: '';
+    width: 100%;
+    background: url(http://demo.themenio.com/ico/assets/images/line.png) repeat 0 0;
+    z-index: 0;
+    animation: slide 1s linear infinite; 
+}
+
+.process-scetion .slider-nav-item:last-child:after {
+    display: none; 
+}
+
+.process-scetion .slider-nav-item .ikon {
+    font-size: 50px;
+    line-height: 80px; 
+}
+
+@keyframes focuse {
+    0% {
+        transform: scale(0.8);
+        opacity: 1; }
+    75% {
+        transform: scale(1.2);
+        opacity: 0; }
+    100% {
+        transform: scale(1.2);
+        opacity: 0; } }
+    @keyframes slide {
+    from {
+        background-position: 0 0; }
+    to {
+        background-position: 40px 0; } }
+
+.cta-button {
+    margin-top:50px;
+    padding: 15px 20px;
+    background-color: #002778;
+    border-radius: 10px;
+    color: #2d2d2d;
+    font-size: 1rem;
+    font-weight: 500;
+    
+    display: flex;
+    width: 50%; /* Solo cubre el ancho del texto */    
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(to right, #FCBC4C, #FCBC4C); /* Gradiente de fondo */
+    box-shadow: 0 15px 15px #0707074d; /* Sombra */
+    position: relative; /* Necesario para el pseudo-elemento */
+    overflow: hidden; /* Oculta el pseudo-elemento fuera del botón */
+    margin-bottom: 10px; /* Espacio entre botones */
+    }
+
+.cta-button2 {
+    margin-top:50px;
+    padding: 20px 20px;
+    background-color: #FCBC4C;
+    border: 0;
+    border-radius: 10px;
+    color: #2d2d2d;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.05);
+    animation: shadow-pulse 2s infinite;
+    cursor:pointer;
+    display: flex;
+    width: 30%; /* Solo cubre el ancho del texto */    
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+/*Square Box*/
+
+.square_box {
+    position: relative;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top-left-radius: 45px;
+    opacity: 0.302;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.square_box.box_three {
+    background-image: -moz-linear-gradient(-90deg, #290a59 0%, #FCBC4C 100%);
+    background-image: -webkit-linear-gradient(-90deg, #290a59 0%, #FCBC4C 100%);
+    background-image: -ms-linear-gradient(-90deg, #290a59 0%, #FCBC4C 100%);
+    opacity: 0.059;
+    left: 0px;
+    top: -260px;
+    width: 300px;
+    height: 300px;
+    border-radius: 45px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  @keyframes shadow-pulse
+  {
+       0% {
+            box-shadow: 0 0 0 0px #FCBC4C;
+       }
+       100% {
+            box-shadow: 0 0 0 35px #ffffff00;
+       }
+  }
+
+/* Media query for laptop screens */
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 18px;
+        margin-top: 15%; /* Ajustamos el margen superior para acomodar la imagen del perfil en pantallas más pequeñas */
+    }
+
+    p {
+        font-size: 20px;
+        margin-top: 10px; /* Ajustamos el margen superior para acomodar la imagen del perfil */
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        top: 130px; /* Ajustamos la posición para pantallas más pequeñas */
+    }
+}
+
+/* Media query for tablet screens */
+@media (max-width: 820px) {
+    h1 {
+        font-size: 18px;
+        margin-top: 15%; /* Ajustamos el margen superior para acomodar la imagen del perfil en pantallas más pequeñas */
+    }
+
+    p {
+        font-size: 20px;
+        margin-top: 10px; /* Ajustamos el margen superior para acomodar la imagen del perfil */
+    }
+    
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        top: 130px; /* Ajustamos la posición para pantallas más pequeñas */
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+        margin-top: 15%; /* Ajustamos el margen superior para acomodar la imagen del perfil en pantallas más pequeñas */
+    }
+
+    p {
+        font-size: 20px;
+        margin-top: 5px; /* Ajustamos el margen superior para acomodar la imagen del perfil */
+    }
+    
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        top: 130px; /* Ajustamos la posición para pantallas más pequeñas */
+    }
+}
+
+:root {
+	--main-bg-color: #000000;
+	--main-text-color: #888888;
+}
+
+.clock {
+	min-height: 1.5em;
+	min-width: 1.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--main-bg-color);
+	background-image: url("https://imvpn22.github.io/analog-clock/clock.png");
+	border-radius: 50%;
+	border: 7px solid var(--main-bg-color);
+    margin-top: 0px;
+	
+}
+.clock:before {
+	content: "";
+	height: 0.5rem;
+	width: 0.5rem;
+	background-color: var(--main-text-color);
+	border: 2px solid var(--main-bg-color);
+	position: absolute;
+	border-radius: 50%;
+	z-index: 1000;
+	transition: all ease 0.2s;
+}
+.hour, .min, .sec {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	border-radius: 50%;
+}
+.hour {
+	height: 2em;
+	width: 2em;
+}
+.hour:before {
+	content: "";
+	position: absolute;
+	height: 50%;
+	width: 6px;
+	background-color: var(--main-text-color);
+	border-radius: 6px;
+}
+.min {
+	height: 4em;
+	width: 4em;
+}
+.min:before {
+	content: "";
+	height: 50%;
+	width: 4px;
+	background-color: var(--main-text-color);
+	border-radius: 4px;
+}
+.sec {
+	height: 5em;
+	width: 5em;
+}
+.sec:before {
+	content: "";
+	height: 60%;
+	width: 2px;
+	background-color: #f00000;
+	border-radius: 2px;
+}
