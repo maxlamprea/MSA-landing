@@ -2,13 +2,13 @@ const { useEffect, useState } = React;
 
 const Banner = () => (
   <div className="banner">
-    <img src="./assets/banner.jpg" alt="Banner MSA" className="img-fluid" />
+    <img src="./assets/banner.jpg" alt="Foto de Portada MaxStoreAccesorios" className="img-fluid" />
   </div>
 );
 
 const ProfilePic = () => (
   <div className="profile-pic">
-    <img src="./assets/profile-pic.png" alt="MSA" className="rounded-circle" />
+    <img src="./assets/profile-pic.png" alt="Foto de Perfil MaxStoreAccesorios" className="rounded-circle" />
   </div>
 );
 
@@ -150,7 +150,7 @@ const App = () => (
     <ProfilePic />
     <h1>MaxStoreAccesorios</h1>
     <SocialLinks />
-    <p className="mt-3">No pierdas tiempo! ⌚</p>
+    <p className="mt-3">El tiempo es tuyo! ⌚</p>
     <Watch />
     <Links />
     <Footer />
