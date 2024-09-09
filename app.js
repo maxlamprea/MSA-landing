@@ -1,7 +1,6 @@
 const { useEffect, useState } = React;
 
 const Spinner = () => (
-
   <div id="loader">
     <div class="canvas canvas2">
       <div class="minute2"></div>   
@@ -132,7 +131,7 @@ const Links = () => {
     };
 
     animateShake();
-    const intervalId = setInterval(animateShake, 2000); //5 Seg
+    const intervalId = setInterval(animateShake, 2000); //x Seg
     return () => clearInterval(intervalId);
 
   }, []);
