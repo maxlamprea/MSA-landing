@@ -6,6 +6,7 @@ function showSpinner() {
 function hideSpinner() {
     // Desvanecer el spinner configurando la opacidad a 0
     document.getElementById("loader").style.opacity = "0";
+    document.getElementById("loader").style.zIndex = "-1";
     
     setTimeout(function() {
         document.getElementById("root").style.opacity = "1";
