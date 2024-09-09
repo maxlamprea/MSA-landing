@@ -8,7 +8,7 @@ const Banner = () => (
 
 const ProfilePic = () => (
   <div className="profile-pic">
-    <img src="./assets/profile-pic.png" alt="Foto de Perfil MaxStoreAccesorios" className="rounded-circle" />
+    <img src="./assets/profile-pic.png" alt="Foto de Perfil MaxStoreAccesorios" className="rounded-circle" title="¡Sumérgete en el mundo de lujo y elegancia en MaxStoreAccesorios 🎉: ¡Tu destino ideal de relojes que realzan tu estilo de vida! ⌚"/>
   </div>
 );
 
