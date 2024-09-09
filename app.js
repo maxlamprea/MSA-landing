@@ -1,5 +1,16 @@
 const { useEffect, useState } = React;
 
+const Spinner = () => (
+
+  <div id="loader">
+    <div class="canvas canvas2">
+      <div class="minute2"></div>   
+      <div class="hour2"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+);
+
 const Banner = () => (
   <div className="banner">
     <img src="./assets/banner.jpg" alt="Foto de Portada MaxStoreAccesorios" className="img-fluid" />
@@ -8,7 +19,7 @@ const Banner = () => (
 
 const ProfilePic = () => (
   <div className="profile-pic">
-    <img src="./assets/profile-pic.png" alt="Foto de Perfil MaxStoreAccesorios" className="rounded-circle" title="¡Sumérgete en el mundo de lujo y elegancia en MaxStoreAccesorios 🎉: ¡Tu destino ideal de relojes que realzan tu estilo de vida! ⌚"/>
+    <img src="./assets/profile-pic.png" alt="Foto de Perfil MaxStoreAccesorios" className="rounded-circle" title="¡Sumérgete en un mundo de lujo y elegancia con MaxStoreAccesorios 🎉: ¡Tu destino ideal de relojes que realzan tu estilo de vida! ⌚"/>
   </div>
 );
 
@@ -146,6 +157,7 @@ const Footer = () => (
 
 const App = () => (
   <div className="container text-center mt-5">
+    <Spinner />
     <Banner />
     <ProfilePic />
     <h1>MaxStoreAccesorios</h1>
