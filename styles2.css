@@ -1,0 +1,11 @@
+/* Estilo para aplicar una imagen de fondo a todo el body */
+body {
+    background-image: url('https://docs.google.com/drawings/d/e/2PACX-1vSOo8dCal94Nr0nROXwEs6ddMCiYQaV6D9r_Dj95gg2ZudANGLJA94Vez8qBF2ax_QpbM2R8X56xjo0/pub?w=387&h=686'); /* Ruta a la imagen deseada */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el área */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que el fondo quede fijo al hacer scroll */
+    height: 100vh; /* Establece una altura de vista completa */
+    margin: 0;
+    padding: 0;
+}
