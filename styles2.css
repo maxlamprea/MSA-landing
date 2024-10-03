@@ -15,15 +15,16 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 24px; /* Tamaño de la flecha */
+    font-size: 20px; /* Tamaño de la flecha */
     text-decoration: none; /* Sin subrayado */
     color: #ffffff; /* Color de la flecha */
-    background-color: #504f4f; /* Fondo para hacer que la flecha destaque */
-    padding-top: 10px; /* Espacio alrededor de la flecha */
-    padding-bottom: 10px; /* Espacio alrededor de la flecha */
-    padding-left: 10px; /* Espacio alrededor de la flecha */
-    padding-right: 10px; /* Espacio alrededor de la flecha */
-    border-radius: 100%; /* Forma circular */
+    background-color: #504f4f; /* Fondo del círculo */
+    width: 45px; /* Ancho fijo para mantener el círculo */
+    height: 45px; /* Alto fijo para mantener el círculo */
+    border-radius: 50%; /* Forma circular */
+    display: flex; /* Flexbox para centrar */
+    justify-content: center; /* Centra horizontalmente la flecha */
+    align-items: center; /* Centra verticalmente la flecha */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para darle relieve */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -35,8 +36,8 @@ body {
 
 .back-text {
     position: absolute;
-    top: 30px;
-    left: 50px;
+    top: 27px;
+    left: 55px;
     font-size: 10px;
     text-decoration: none;
     color: #ffffff;
