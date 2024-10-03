@@ -20,14 +20,14 @@ body {
     color: #ffffff; /* Color de la flecha */
     background-color: #504f4f; /* Fondo para hacer que la flecha destaque */
     padding: 10px; /* Espacio alrededor de la flecha */
-    border-radius: 50%; /* Forma circular */
+    border-radius: 100%; /* Forma circular */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para darle relieve */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .back-arrow:hover {
-    background-color: #333; /* Cambia el color de fondo al pasar el cursor */
-    color: #fff; /* Cambia el color de la flecha al pasar el cursor */
+    background-color: #ffffff; /* Cambia el color de fondo al pasar el cursor */
+    color: #2f2f2f; /* Cambia el color de la flecha al pasar el cursor */
 }
 
 .back-text {
@@ -38,10 +38,4 @@ body {
     text-decoration: none;
     color: #ffffff;
     padding: 10px 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.back-text:hover {
-    background-color: #333;
-    color: #fff;
 }
