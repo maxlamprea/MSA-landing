@@ -19,7 +19,10 @@ body {
     text-decoration: none; /* Sin subrayado */
     color: #ffffff; /* Color de la flecha */
     background-color: #504f4f; /* Fondo para hacer que la flecha destaque */
-    padding: 10px; /* Espacio alrededor de la flecha */
+    padding-top: 10px; /* Espacio alrededor de la flecha */
+    padding-bottom: 10px; /* Espacio alrededor de la flecha */
+    padding-left: 10px; /* Espacio alrededor de la flecha */
+    padding-right: 10px; /* Espacio alrededor de la flecha */
     border-radius: 100%; /* Forma circular */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para darle relieve */
     transition: background-color 0.3s ease, color 0.3s ease;
