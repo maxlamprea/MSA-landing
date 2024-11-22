@@ -140,7 +140,6 @@ const Links = () => {
     <div>
       <a href="https://maxstoreaccesorios.wixsite.com/maxstoreaccesorios" className="cta-button">Catálogo</a>
       <a href="https://bit.ly/Catalogo_Drive_MSA" className="cta-button2">Destacados del mes</a>
-      <a href="https://sorteostore.pythonanywhere.com" className="cta-button3"><b>¡Participa!</b></a>
       <section>
         <div class="square_box box_three"></div>
       </section>
