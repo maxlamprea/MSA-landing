@@ -150,7 +150,7 @@ const Links = () => {
 const Footer = () => (
   <div class="footer">
     <hr></hr><br></br>
-		&copy; 2024 <a href="http://maxstoreaccesorios.com">MaxStoreAccesorios</a>
+		&copy; 2025 <a href="http://maxstoreaccesorios.com">MSA Relojes</a>
 	</div>
 );
 
@@ -159,7 +159,7 @@ const App = () => (
     <Spinner />
     <Banner />
     <ProfilePic />
-    <h1>MaxStoreAccesorios</h1>
+    <h1>MSA Relojes</h1>
     <SocialLinks />
     <p className="mt-3">El tiempo es tuyo! ⌚</p>
     <Watch />
